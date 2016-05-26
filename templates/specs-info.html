@@ -10,15 +10,15 @@
 
   <div class="info-container section-content" collapse-when="specs.info.$folded">
     <div marked="specs.info.description"></div>
-    <h4>Version <span>{{specs.info.version}}</span></h4>
+    <h4>版本 <span>{{specs.info.version}}</span></h4>
     <div class="contact info-box" ng-if="specs.info.contact">
-      <h4>Contact information</h4>
+      <h4>联系信息</h4>
       <p ng-if="specs.info.contact.name">{{specs.info.contact.name}}</p>
       <p ng-if="specs.info.contact.email" ng-bind-html="specs.info.contact.email | linky:'_blank'"></p>
       <p ng-if="specs.info.contact.url" ng-bind-html="specs.info.contact.url | linky:'_blank'"></p>
     </div>
     <div class="terms info-box" ng-if="specs.info.termsOfService">
-      <h4>Terms of service</h4>
+      <h4>服务条款</h4>
       <p ng-bind-html="specs.info.termsOfService | linky:'_blank'"></p>
     </div>
     <div class="external-docs" ng-if="specs.externalDocs">

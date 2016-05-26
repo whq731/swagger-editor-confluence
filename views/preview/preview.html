@@ -1,6 +1,6 @@
 <div class="preview-wrapper">
   <div class="dirty-message" ng-if="isDirty">
-    This preview is out of date. Please <a ng-click="loadLatest()">reload</a> to see the latest.
+    当前预览已经过期. 请 <a ng-click="loadLatest()">刷新</a> 显示最新结果.
   </div>
 
   <ng-include
@@ -28,7 +28,7 @@
       </a>
 
       <span class="on-hover">
-        <a ng-click="listAllOperation()">List all operations</a>
+        <a ng-click="listAllOperation()">列出所有请求</a>
       </span>
     </h3>
   </header>
@@ -50,7 +50,7 @@
         foldEditor(['definitions'], specs.definitions.$folded);
       ">Models</a>
       <span class="on-hover">
-        <a ng-click="listAllDefnitions()">List all models</a>
+        <a ng-click="listAllDefnitions()">列出所有数据模型</a>
       </span>
     </h3>
   </header>

@@ -1,5 +1,5 @@
 <div class="modal-header">
-  <h3 class="modal-title">Paste Swagger JSON</h3>
+  <h3 class="modal-title">粘贴 Swagger JSON</h3>
 </div>
 <div class="modal-body">
   <div class="form-group">
@@ -10,9 +10,9 @@
     Error
     <json-formatter class="error json-formatter-dark" json="error" open="2"></json-formatter>
   </div>
-  <p class="can-import" ng-if="!error">✔ Valid Swagger</p>
+  <p class="can-import" ng-if="!error">✔ 正确的 Swagger</p>
 </div>
 <div class="modal-footer">
-  <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
-  <button class="btn btn-primary" ng-click="ok()" ng-disabled="!canImport">Import</button>
+  <button class="btn btn-warning" ng-click="cancel()">取消</button>
+  <button class="btn btn-primary" ng-click="ok()" ng-disabled="!canImport">导入</button>
 </div>

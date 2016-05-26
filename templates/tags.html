@@ -1,12 +1,12 @@
 <div class="root tags">
   <div class="filtered" ng-if="stateParams.tags">
-    <p>Showing only operations with following tag{{getCurrentTags().length === 1 ? '' : 's'}}:</p>
+    <p>只显示属于该标签{{getCurrentTags().length === 1 ? '' : 's'}}的操作:</p>
     <span class="tag tag-color-{{tagIndexFor(tag)}}" ng-repeat="tag in getCurrentTags() track by $index">{{tag}}
       <a class="delete-tag" ui-sref="{tags: ''}">×</a>
     </span>
   </div>
   <div class="all-tags" ng-if="!stateParams.tags && getAllTags().length">
-    <p>Filter operations by a tag:</p>
+    <p>通过标签筛选操作:</p>
     <table ng-if="tagsHaveDescription()">
       <tr ng-repeat="tag in getAllTags() track by $index">
         <td>
