@@ -98,6 +98,7 @@
     "node": ">=5.8.0"
   },
   "scripts": {
+  	"start": "node server.js",
     "build": "webpack --production --hide-modules --stats=errors-only",
     "unit-test": "karma start test/unit/karma.conf.js --single-run=true",
     "unit-test-watch": "karma start test/unit/karma.conf.js",
